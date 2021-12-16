@@ -2,15 +2,17 @@
   "name": "json-rules-engine-api",
   "version": "1.0.0",
   "description": "A attempt on json-rules-engine",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon --watch app app/index.js",
+    "start-debug": "nodemon --inspect=0.0.0.0:9229 --watch app app/index.js"
   },
   "devDependencies": {
-    "nodemon": "^1.18.11"
+    "nodemon": "^2.0.2"
   },
   "dependencies": {
     "json-rules-engine": "^6.1.2",
-    "json-rules-engine-simplified": "^0.1.17"
+    "json-rules-engine-simplified": "^0.1.17",
+    "start": "^5.1.0"
   }
 }

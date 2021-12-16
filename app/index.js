@@ -52,6 +52,7 @@ const server = http.createServer((req, res) => {
   const { query, pathname } = url.parse(req.url, true);
     let data = '';
     let fetched;
+    
 
     req.on('data', chunk => {
       data += chunk;
@@ -67,7 +68,7 @@ const server = http.createServer((req, res) => {
             res.writeHead(200, {
               'Content-type': 'text/html'
             });
-          res.end('<h1>Hello. Please user api at /api</h1>');
+          res.end('<h1>Hello. Please use api at: /api</h1>');
 
 
           // API
@@ -111,6 +112,6 @@ const server = http.createServer((req, res) => {
     });
 });
 
-server.listen(8000, '127.0.0.1', () => {
+server.listen(8000, '0.0.0.0', () => {
   console.log('Listening to requests on port 8000');
 });
