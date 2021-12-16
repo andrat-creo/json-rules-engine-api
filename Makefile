@@ -16,7 +16,7 @@ run-dev-env:  ## Run dev instance - use IP written below, not from command promp
 run-debug-env:  ## Run debug instance - use IP written below, not from command prompt
 	@docker run	--rm \
 				--name rules-engine-debug \
-				--volume $(CURR_PATH):/app \
+				--volume $(CURR_PATH)/app:/app \
 				--publish 127.0.0.1:8888:8000 \
 				--publish 127.0.0.1:9229:9229 \
 				rules-engine

@@ -68,7 +68,7 @@ const server = http.createServer((req, res) => {
             res.writeHead(200, {
               'Content-type': 'text/html'
             });
-          res.end('<h1>Hello. Please use api at: /api</h1>');
+          res.end('<h1>Hello. Please use API at: /api</h1>');
 
 
           // API
