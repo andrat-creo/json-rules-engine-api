@@ -1,0 +1,18 @@
+{
+  "conditions": {
+      "all": [
+          {
+              "fact": "userAuthorized",
+              "operator": "equal",
+              "value": true
+          }
+      ]
+  },
+  "event": {
+      "type": "userAuthorized",
+      "params": {
+          "message": "Confirmation that user is authorized to use API",
+          "value": true
+      }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "conditions": {
+      "all": [
+          {
+              "fact": "userGroup",
+              "operator": "in",
+              "value": [
+                  "FLAMCO",
+                  "Flamco",
+                  "flamco"
+              ]
+          }
+      ]
+  },
+  "event": {
+      "type": "userGroup",
+      "params": {
+          "message": "Returning metadata fileds for Flamco user",
+          "value": [
+              "field1",
+              "filed2"
+          ]
+      }
+  }
+}
